@@ -1,4 +1,4 @@
-# wealthmaxtor
+#Wealth Maxtor
 Redesign of the Wealth Maxtor Website
 
 Manage your money, not the other way around.
