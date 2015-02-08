@@ -1,4 +1,3 @@
 markdown: redcarpet
 baseurl: /wealthmaxtor
-port: 4001
 exclude: ['README.md',]
