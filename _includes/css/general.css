@@ -12,11 +12,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?uz62ew');
-	src:url('fonts/icomoon.eot?#iefixuz62ew') format('embedded-opentype'),
-		url('fonts/icomoon.woff?uz62ew') format('woff'),
-		url('fonts/icomoon.ttf?uz62ew') format('truetype'),
-		url('fonts/icomoon.svg?uz62ew#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?uz62ew');
+	src:url('../fonts/icomoon.eot?#iefixuz62ew') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?uz62ew') format('woff'),
+		url('../fonts/icomoon.ttf?uz62ew') format('truetype'),
+		url('../fonts/icomoon.svg?uz62ew#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -36,10 +36,35 @@ body {
 }
 
 .flex-logo {
-	width: 30%;
-vertical-align: text-bottom;
+	width: 100%;
+	vertical-align: text-bottom;
+	max-width: 273px;
 }
 
+/* BASE STYLES */
+.flex-img {
+	display: block;
+	width: 100%;
+}
+.app {
+	color: #FFF;
+}
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	margin: 0;
+	color: #6FA816;
+	text-transform: uppercase;
+	line-height: initial;
+}
+
+.body {
+	margin: 0;
+	font-weight: 100;
+}
+
+/* NAVIGATION */
 h1 {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
@@ -47,6 +72,7 @@ h1 {
 	padding: 0 0.5em;
 	font-size: 1.8em!important;
 	margin: 0!important;
+	color: #476B0E;
 }
 
 .title h2 {
@@ -56,16 +82,16 @@ h1 {
 	padding: 0 1em;
 	font-size: 1em!important;
 	margin: 0;
+	color: #EAEAEA;
 }
 
 .title {
-	padding: 1em 0;
+	padding: 2em 0;
 }
 
-/* NAVIGATION */
 #st-trigger-effects {
 text-align: right;
-padding: 26px 0;
+padding: 17px 0;
 }
 
 button:before {
@@ -80,4 +106,32 @@ font-style: normal;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.st-menu-open button:before {
+	display: none;
+}	
+.st-menu-open button:after {
+	content: "\e600";
+font-family: 'icomoon';
+font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* APPS */
+.app .flex-img {
+	width: 45%;
+	margin: 0 auto;
+}
+.app .content {
+}
+.app .body {
+	font-size: 1.5em;
 }
