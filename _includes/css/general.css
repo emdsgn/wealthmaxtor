@@ -1,0 +1,83 @@
+-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?uz62ew');
+	src:url('fonts/icomoon.eot?#iefixuz62ew') format('embedded-opentype'),
+		url('fonts/icomoon.woff?uz62ew') format('woff'),
+		url('fonts/icomoon.ttf?uz62ew') format('truetype'),
+		url('fonts/icomoon.svg?uz62ew#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font: normal 100%/1.4 'Merriweather' sans-serif;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.flex-logo {
+	width: 30%;
+vertical-align: text-bottom;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 0 0.5em;
+	font-size: 1.8em!important;
+	margin: 0!important;
+}
+
+.title h2 {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 0 1em;
+	font-size: 1em!important;
+	margin: 0;
+}
+
+.title {
+	padding: 1em 0;
+}
+
+/* NAVIGATION */
+#st-trigger-effects {
+text-align: right;
+padding: 26px 0;
+}
+
+button:before {
+content: "\e601";
+font-family: 'icomoon';
+font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
