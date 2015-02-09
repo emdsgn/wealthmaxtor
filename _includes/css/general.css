@@ -64,7 +64,7 @@ h2 {
 	font-weight: 100;
 }
 
-/* NAVIGATION */
+/* HEADER & NAVIGATION */
 h1 {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
@@ -87,6 +87,21 @@ h1 {
 
 .title {
 	padding: 2em 0;
+}
+
+header {
+	width: 93%;  
+	height: 80px; 	
+	position: fixed;
+}
+
+.midnightHeader.default {
+  background: none;
+  color: black;
+}
+.midnightHeader.black {
+  background: white;
+  color: black;
 }
 
 #st-trigger-effects {
@@ -125,6 +140,49 @@ font-style: normal;
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/* PARALLAX */
+#slide1, #slide2{ width: 100%; }
+#slide1{
+	background:url('../img/apps.png') 85% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: contain;
+}
+
+#slide2{
+	background-color: #6FA816;
+	color: #FFF;
+	height: 104px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#slide3{
+	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	padding: 170px 0 0 0;	
+	background-size: cover;
+}
+
+#slide4{
+	background-color: #fff;
+	color: #333333;
+	height: 300px;
+	padding: 200px 0;
+}
+
+#slide5{
+	background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+	height: 200px;
+	margin: 0 auto;
+	padding: 250px 0;
+	color: #fff;
+	background-size: cover;
+}
+
 /* APPS */
 .app .flex-img {
 	width: 45%;
@@ -134,4 +192,16 @@ font-style: normal;
 }
 .app .body {
 	font-size: 1.5em;
+}
+
+/* COPYRIGHT */
+#slide2 {
+	color: #FFF;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2.5em 0;
+}
+
+#slide2 .body {
+	color: #FFF;
 }
