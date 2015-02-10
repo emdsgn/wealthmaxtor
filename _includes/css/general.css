@@ -39,6 +39,15 @@ body {
 	width: 100%;
 	vertical-align: text-bottom;
 	max-width: 273px;
+	padding: 1em;
+}
+
+.mobile {
+	display: block;
+}
+
+.desktop {
+	display: none;
 }
 
 /* BASE STYLES */
@@ -49,19 +58,31 @@ body {
 .app {
 	color: #FFF;
 }
-h2 {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 2.5em;
-	margin: 0;
-	color: #6FA816;
-	text-transform: uppercase;
-	line-height: initial;
+
+	h2 {
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+font-size: 2.5em;
+margin: 0;
+color: #6FA816;
+text-transform: uppercase;
+line-height: initial;
+letter-spacing: -2px;
+padding-bottom: 0.3em;
 }
 
 .body {
 	margin: 0;
 	font-weight: 100;
+	text-align: justify;
+}
+
+.body:last-child {
+padding-bottom: 0;
+}
+
+.content strong {
+	font-family: 'Lato', sans-serif;
 }
 
 /* HEADER & NAVIGATION */
@@ -83,6 +104,7 @@ h1 {
 	font-size: 1em!important;
 	margin: 0;
 	color: #EAEAEA;
+	letter-spacing: 0;
 }
 
 .title {
@@ -90,9 +112,10 @@ h1 {
 }
 
 header {
-	width: 93%;  
-	height: 80px; 	
+	width: 100%;  	
 	position: fixed;
+	margin: -1em;
+	background: rgba(0,0,0,0.8);
 }
 
 .midnightHeader.default {
@@ -106,7 +129,6 @@ header {
 
 #st-trigger-effects {
 text-align: right;
-padding: 17px 0;
 }
 
 button:before {
@@ -142,19 +164,18 @@ font-style: normal;
 
 /* PARALLAX */
 #slide1, #slide2{ width: 100%; }
+
 #slide1{
-	background:url('../img/apps.png') 85% 0 no-repeat fixed;
 	color: #fff;
-	height: 600px;
+	height: 100%;
 	margin: 0;
-	padding: 200px 0 260px 0;
 	background-size: contain;
+	padding: 16em 0 0;
 }
 
 #slide2{
 	background-color: #6FA816;
 	color: #FFF;
-	height: 104px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -185,13 +206,67 @@ font-style: normal;
 
 /* APPS */
 .app .flex-img {
-	width: 45%;
-	margin: 0 auto;
+	width: 100%;
+border: 1px #8D8D8D solid;
+padding: 0.8em;
+opacity: 0.8;
+filter: alpha(opacity=80);
+transition: opacity 0.5s ease;
+display: inline-block;
+vertical-align: middle;
+margin-bottom: 0.5em;
 }
+
+.app .appstore-img {
+	width: 100%;
+border: 1px #8D8D8D solid;
+padding: 0.5em 0.8em;
+opacity: 0.8;
+filter: alpha(opacity=80);
+transition: opacity 0.5s ease;
+display: inline-block;
+vertical-align: middle;
+}
+
+.app .flex-img:hover,
+.app .appstore-img:hover {
+	opacity: 1;
+	border-color: #6FA816;
+}
+
 .app .content {
 }
 .app .body {
 	font-size: 1.5em;
+	padding-bottom: 1em;
+	text-align: left;
+}
+
+/* COMPANY */
+.company #slide1{
+	background:	none;
+	color: #fff;
+	margin: 0;
+}
+
+.company .body {
+	padding-bottom: 1em;
+}
+
+/* B2B SOLUTION */
+.b2bsolution #slide1{
+	background:	none;
+	color: #fff;
+	margin: 0;
+}
+
+.b2bsolution .body {
+	padding-bottom: 1em;
+	font-size: 0.9em;
+}
+
+.b2bsolution .unit-spacer {
+	padding: 0;
 }
 
 /* COPYRIGHT */
@@ -199,9 +274,111 @@ font-style: normal;
 	color: #FFF;
 	text-align: center;
 	vertical-align: middle;
-	padding: 2.5em 0;
+	padding: 1em;
 }
 
 #slide2 .body {
 	color: #FFF;
+	font-family: 'Lato', sans-serif;
+text-transform: uppercase;
+font-weight: 300;
+text-align: center;
+font-size: 0.7em;
+}
+
+/* 213 PX */
+@media only screen and (min-width: 13em) {
+	.mobile {
+		display: none
+	}
+	.desktop {
+		display: block;
+	}
+	.flex-logo {
+		padding: 1em 0.5em;
+	}
+	#slide1 {
+		padding: 4em 0 1em;
+	}
+}
+
+/* 240 PX */
+@media only screen and (min-width: 15em) {
+	.flex-logo {
+padding: 0.9em 0.5em;
+}
+}
+
+/* 320 PX */
+@media only screen and (min-width: 20em) {
+	.flex-logo {
+padding: 0.55em 0.5em;
+}
+.st-content-inner {
+padding: 2em 2em 0!important;
+}
+header {
+margin: -2em;
+}
+.st-menu {
+width: 240px!important;
+}
+.st-effect-3.st-menu-open .st-pusher {
+-webkit-transform: translate3d(-240px, 0, 0)!important;
+transform: translate3d(-240px, 0, 0)!important;
+}
+}
+
+/* 360 PX */
+@media only screen and (min-width: 22.5em) {
+	.flex-logo {
+padding: 0.3em 0.5em;
+}
+}
+
+/* 414 PX */
+@media only screen and (min-width: 25em) {
+	.st-content-inner {
+padding: 3em 2em 0!important;
+}
+header {
+margin: -3em -2em;
+}
+}
+
+/* 533 PX */
+@media only screen and (min-width: 33em) {
+	#slide1 {
+padding: 5.25em 0;
+}
+}
+/* 720 PX */
+@media only screen and (min-width: 45em) {
+#slide1{
+	background:url('../img/apps.png') 85% 0 no-repeat fixed;
+	color: #fff;
+	margin: 0;
+	background-size: contain;
+}
+}
+
+/* 1024 PX */
+@media only screen and (min-width: 64em) {
+	.app .flex-img {
+width: 45%;
+margin-bottom: 0;
+margin-right: 0.5em;
+}
+.app .appstore-img {
+width: 50%;
+}
+.st-content-inner {
+padding: 0!important;
+}
+header {
+margin: 0;
+}
+#slide1 {
+padding: 11em 0 12em 6em;
+}
 }

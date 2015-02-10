@@ -1,11 +1,3 @@
-html,
-body,
-.st-container,
-.st-pusher,
-.st-content {
-	height: 100%;
-}
-
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
@@ -55,12 +47,15 @@ background: #EAEAEA;
 	overflow: hidden;
 }
 
+.st-content-inner {
+	padding: 1em;
+}
+
 .st-pusher {
 	position: relative;
 	right: 0;
 	z-index: 99;
 	height: 100%;
-	padding: 1em 3em;
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
 }
@@ -92,7 +87,7 @@ background: #EAEAEA;
 	right: 0;
 	z-index: 100;
 	visibility: hidden;
-	width: 300px;
+	width: 161px;
 	height: 100%;
 	background: #6FA816;
 	-webkit-transition: all 0.5s;
@@ -144,21 +139,27 @@ background: #EAEAEA;
 	transition: background 0.3s, box-shadow 0.3s ease;
 }
 
-.st-menu ul li:first-child a {
-	box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
-}
-
 .st-menu ul li a:hover {
 	background: rgba(0,0,0,0.2);
 	box-shadow: inset 0 -1px rgba(0,0,0,0);
 	color: #fff;
 }
 
+.st-menu li ul {
+	padding-left: 1em;
+}
+
+.st-menu li ul a:before {
+	content: '•';
+	padding: 0 0.3em;
+vertical-align: baseline;
+}
+
 /* Individual effects */
 /* Effect 3: Push*/
 .st-effect-3.st-menu-open .st-pusher {
-	-webkit-transform: translate3d(-300px, 0, 0);
-	transform: translate3d(-300px, 0, 0);
+	-webkit-transform: translate3d(-161px, 0, 0);
+	transform: translate3d(-161px, 0, 0);
 }
 
 .st-effect-3.st-menu {
