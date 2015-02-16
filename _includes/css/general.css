@@ -112,19 +112,16 @@ h1 {
 }
 
 header {
-	width: 100%;  	
-	position: fixed;
+  	position: fixed;
+  	width: 100%;
+  	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  	-webkit-transition: height 0.3s;
+  	-moz-transition: height 0.3s;
+  	-ms-transition: height 0.3s;
+  	-o-transition: height 0.3s;
+  	transition: height 0.3s;
 	margin: -1em;
 	background: rgba(0,0,0,0.8);
-}
-
-.midnightHeader.default {
-  background: none;
-  color: black;
-}
-.midnightHeader.black {
-  background: white;
-  color: black;
 }
 
 #st-trigger-effects {
@@ -297,16 +294,10 @@ font-size: 0.7em;
 	.flex-logo {
 		padding: 1em 0.5em;
 	}
-	#slide1 {
-		padding: 4em 0 1em;
-	}
 }
 
 /* 240 PX */
 @media only screen and (min-width: 15em) {
-	.flex-logo {
-padding: 0.9em 0.5em;
-}
 }
 
 /* 320 PX */
@@ -348,10 +339,8 @@ margin: -3em -2em;
 
 /* 533 PX */
 @media only screen and (min-width: 33em) {
-	#slide1 {
-padding: 5.25em 0;
 }
-}
+
 /* 720 PX */
 @media only screen and (min-width: 45em) {
 #slide1{
@@ -378,7 +367,8 @@ padding: 0!important;
 header {
 margin: 0;
 }
-#slide1 {
-padding: 11em 0 12em 6em;
 }
+
+/*1920 PX */
+@media only screen and (min-width: 20em) {
 }

@@ -10,7 +10,9 @@
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
 
 <link href="css/wealthmaxtor.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -83,18 +85,11 @@
   <script src="js/sidebarEffects.js"></script>
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
 
-<script>
-  $(document).ready(function() {
-  
-  var nice = $("html").niceScroll();  // The document page (body)
-  
-  });
-</script>
+<script type="text/javascript">
 
-    <script>
-   
-<!--/// JQUERY FOR SLIDING NAVIGATION -->   
+// JQUERY FOR SLIDING NAVIGATION
 $(document).ready(function() {
   $('a[href*=#]').each(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -105,9 +100,9 @@ $(document).ready(function() {
        if ($target) {
          var targetOffset = $target.offset().top;
 
-<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+// <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
          $(this).click(function() {
-            $("nav li a").removeClass("active");
+            $("#menu-3 li a").removeClass("active");
             $(this).addClass('active');
            $('html, body').animate({scrollTop: targetOffset}, 1000);
            return false;
@@ -117,8 +112,13 @@ $(document).ready(function() {
   });
 
 });
-
-
+</script>
+<script>
+  $(document).ready(function() {
+  
+  var nice = $("html").niceScroll();  // The document page (body)
+  
+  });
 </script>
 </body>
 </html>
