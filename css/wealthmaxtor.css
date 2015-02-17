@@ -5,3 +5,4 @@
 {% include css/grid.css %}
 {% include css/normalize.css %}
 {% include css/component.css %}
+{% include css/immersive-slider.css %}
