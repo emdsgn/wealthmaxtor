@@ -59,7 +59,7 @@ body {
 	color: #FFF;
 }
 
-	h2 {
+h2 {
 font-family: 'Lato', sans-serif;
 font-weight: 300;
 font-size: 2.5em;
@@ -71,14 +71,48 @@ letter-spacing: -2px;
 padding-bottom: 0.3em;
 }
 
+h3 {
+font-family: 'Lato', sans-serif;
+text-transform: uppercase;
+font-size: 2.2em;
+margin: 0;
+padding-bottom: 1em;
+color: #39560B;
+letter-spacing: 2px;
+}
+
+h3 p {
+font-family: 'Merriweather', serif;
+text-transform: none;
+margin: 0;
+font-size: 0.45em;
+font-weight: 100;
+letter-spacing: 1px;
+}
+
 .body {
-	margin: 0;
-	font-weight: 100;
-	text-align: justify;
+color: #000;
+font-family: 'Merriweather', serif;
+font-weight: 300;
+font-size: 1em;
+margin: 0;
 }
 
 .body:last-child {
 padding-bottom: 0;
+}
+
+.body-link {
+	padding-top: 3em;
+}
+
+.body-link a {
+color: #6FA816;
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Lato', sans-serif;
+border: solid 1px;
+padding: 1em;
 }
 
 .content strong {
@@ -160,21 +194,24 @@ font-style: normal;
 }
 
 /* PARALLAX */
-#slide1, #slide2{ width: 100%; }
-
 #slide1{
 	background: url('../img/apps.png') 85% 0 no-repeat fixed;
 	color: #fff;
 	height: 100%;
 	margin: 0;
 	background-size: contain;
+	vertical-align: middle;
+	padding: 11em;
 }
 
 #slide2{
-	background-color: #2b2b2b;
+	background-color: #6FA816;;
 	color: #FFF;
 	margin: 0 auto;
 	overflow: hidden;
+	vertical-align: middle;
+	padding: 5em;
+	text-align: center;
 }
 
 #slide3{
@@ -190,6 +227,8 @@ font-style: normal;
 #slide5{
 	margin: 0 auto;
 	color: #FFF;
+	text-align: center;
+	padding: 5em;
 }
 
 .social-media {
@@ -226,14 +265,14 @@ vertical-align: middle;
 	border-color: #6FA816;
 }
 
-.app .content {
-}
 .app .body {
 	font-size: 1.5em;
 	padding-bottom: 1em;
 	text-align: left;
+	color: #FFF;
 }
-/* MODAL */
+
+/* FEATURES */
 .md-perspective,
 .md-perspective body {
 	height: 100%;
@@ -368,7 +407,6 @@ vertical-align: middle;
 .main {
       width: 100%;
       margin: 0 auto;
-      background: #161923;
     }
     
     .main h1 {
@@ -482,23 +520,6 @@ dialog[open] {
 	padding: 0;
 }
 
-/* COPYRIGHT */
-#slide2 {
-	color: #FFF;
-	text-align: center;
-	vertical-align: middle;
-	padding: 1em;
-}
-
-#slide2 .body {
-	color: #FFF;
-	font-family: 'Lato', sans-serif;
-text-transform: uppercase;
-font-weight: 300;
-text-align: center;
-font-size: 0.7em;
-}
-
 /* 213 PX */
 @media only screen and (min-width: 13em) {
 	.mobile {
@@ -561,8 +582,6 @@ margin: -3em -2em;
 @media only screen and (min-width: 45em) {
 #slide1{
 	background:url('../img/apps.png') 85% 0 no-repeat fixed;
-	color: #fff;
-	margin: 0;
 	background-size: contain;
 }
 }
