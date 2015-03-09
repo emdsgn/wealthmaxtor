@@ -117,11 +117,11 @@ $(document).ready(function() {
 });
 </script>
 <script>
-  $(document).ready(function() {
-  
-  var nice = $("html").niceScroll();  // The document page (body)
-  
-  });
+(function($){
+        $(window).load(function(){
+            $(".st-content").niceScroll();
+        });
+    })(jQuery);
 </script>
 <script type="text/javascript">
       $(document).ready( function() {

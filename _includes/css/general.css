@@ -164,8 +164,21 @@ header {
 	z-index: 2;
 }
 
-#st-trigger-effects {
-text-align: right;
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5em 0.8em;
+  font-size: 2em!important;
+  color: #FFF;
+  transition: background 0.8s ease;
+}
+
+button:hover {
+	background-color: #6FA816;
+}
+
+.st-menu-open button {
+  background-color: #6FA816;
 }
 
 button:before {
@@ -197,6 +210,10 @@ font-style: normal;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+#st-trigger-effects {
+text-align: right;
 }
 
 /* PARALLAX */
@@ -265,6 +282,21 @@ margin-bottom: 0.5em;
 	padding-bottom: 1em;
 	text-align: left;
 	color: #FFF;
+}
+
+/* ABOUT */
+#slide2 h2:after {
+  content: "";
+  border-right: 2px solid #000;
+  padding-right: 0.3em;
+}
+
+.steps {
+	padding: 2em 1em;
+}
+
+.steps .body {
+	text-align: left;
 }
 
 /* FEATURES */
