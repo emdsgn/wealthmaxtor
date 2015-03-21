@@ -240,6 +240,8 @@ text-align: right;
 #slide3{
 	color: #fff;
 	background-size: cover;
+	text-align: center;
+	padding: 2em;
 }
 
 #slide4{
@@ -285,10 +287,38 @@ margin-bottom: 0.5em;
 }
 
 /* ABOUT */
-#slide2 h2:after {
-  content: "";
-  border-right: 2px solid #000;
-  padding-right: 0.3em;
+.one h2:before,
+.two h2:before,
+.three h2:before,
+.four h2:before,
+.five h2:before {
+  padding: 0.4em 0.5em;
+  border-radius: 150px;
+  margin-left: -20px;
+  transition: 1s;
+  border: 1px solid #6FA816;
+  color: #6FA816;
+  font-size: 30px;
+}
+
+.one h2:before {
+	content: "01";
+}
+
+.two h2:before {
+	content: "02";
+}
+
+.three h2:before {
+	content: "03";
+}
+
+.four h2:before {
+	content: "04";
+}
+
+.five h2:before {
+	content: "05";
 }
 
 .steps {
@@ -300,6 +330,23 @@ margin-bottom: 0.5em;
 }
 
 /* FEATURES */
+.md-trigger{
+	color: #6FA816;
+	font-size: 1.3em!important;
+	padding: 1em;
+	opacity: 0.7;
+	transition: opacity 0.8s ease;
+}
+
+.md-trigger:before {
+	content: "";
+}
+
+.md-trigger:hover {
+	background-color: transparent;
+	opacity: 1;
+}
+
 .md-perspective,
 .md-perspective body {
 	height: 100%;
@@ -364,7 +411,7 @@ margin-bottom: 0.5em;
 /* Content styles */
 .md-content {
 	color: #fff;
-	background: #e74c3c;
+	background: #6FA816;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
@@ -377,6 +424,7 @@ margin-bottom: 0.5em;
 	font-size: 2.4em;
 	font-weight: 300;
 	opacity: 0.8;
+	color: #FFF;
 	background: rgba(0,0,0,0.1);
 	border-radius: 3px 3px 0 0;
 }
@@ -406,9 +454,24 @@ margin-bottom: 0.5em;
 	display: block;
 	margin: 0 auto;
 	font-size: 0.8em;
+
 }
 
-/* Individual modal styles with animations/transitions */
+.md-close {
+	font-family: "Lato", sans-serif;
+  font-size: 2em!important;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: all 0.8s ease;
+}
+
+.md-close:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.md-close:before {
+	content: "";
+}
 
 /* Effect 1: Fade in and scale up */
 .md-effect-1 .md-content {
